@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias da Escola CETI Leonardo das Dores</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (Notification.permission !== "granted") {
+        if (confirm("O site CETI Leonardo das Dores deseja enviar notificações das principais notícias?")) {
+          Notification.requestPermission();
+        }
+      }
+
+      document.getElementById('menu-btn').onclick = () => {
+        document.getElementById('side-menu').classList.remove('hidden');
+      };
+
+      document.getElementById('close-btn').onclick = () => {
+        document.getElementById('side-menu').classList.add('hidden');
+      };
+    });
+  </script>
+</head>
+<body>
+    <header>
+        <img src="logo-ceep-cortado.png.png" alt="Logo CEEP Leonardo das Dores" class="logo girando">
+        <h1>Notícias do CETI Leonardo das Dores</h1>
+        <nav>
+            <ul>
+                <li><a href="Calendário.png.pdf">calendario de atividades</a></li>
+                <li><a href="#seduc">SEDUC ta on</a></li>
+                <li><a href="#governo">Governo do Piauí</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="destaques">
+        <h2>Destaques</h2>
+        <article>
+            <h3>Fardamento novos</h3>
+            <p>O Governo do Piauí anunciou novos fardamentos para os alunos(as) Para as escolas estaduais...</p>
+            <source src="galeria-ardamnto">
+            <div class="galeria-fardamento">
+                <div class="fardamento foto1"></div>
+                <div class="fardamento foto2"></div>
+                <div class="fardamento foto3"></div>
+                <div class="fardamento foto4"></div>
+                <div class="fardamento foto5"></div>
+                <div class="fardamento foto6"></div>
+                <div class="fardamento foto7"></div>
+                <div class="fardamento foto8"></div>
+                <div class="fardamento foto9"></div>
+                <div class="fardamento foto10"></div>
+                <div class="fardamento foto11"></div>
+                <div class="fardamento foto12"></div>
+                <div class="fardamento foto13"></div>
+                <div class="fardamento foto14"></div>
+                <div class="fardamento foto15"></div>
+                <div class="fardamento foto16"></div>
+            </div>  
+        </article>
+        <!-- Mais artigos -->
+    </section>
+    <section id="ultimas">
+  <h2>Últimas Notícias</h2>
+  <article>
+    <section id="ultimas">
+  <h2>Últimas Notícias</h2>
+  <article>
+    <h3>Melhores Notas do ENEM 2024</h3>
+    <div class="cards-notas">
+      <div class="card-nota">
+        <h4>Ana Lima</h4>
+        <p>Nota: <strong>920</strong></p>
+      </div>
+      <div class="card-nota">
+        <h4>João Sousa</h4>
+        <p>Nota: <strong>890</strong></p>
+      </div>
+      <div class="card-nota">
+        <h4>João Sousa</h4>
+        <p>Nota: <strong>890</strong></p>
+      </div>
+      <div class="card-nota">
+        <h4>João Sousa</h4>
+        <p>Nota: <strong>890</strong></p>
+      </div>
+  </article>
+</section>
+<section id="seduc">
+  <h2>SEDUC Tá On</h2>
+  <article>
+    <video controls width="100%" style="margin-top: 20px; border-radius: 12px;">
+      <source src="seduc-video.mp4.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeos.
+    </video>
+    <h3>O ENEM 2025 está chegando</h3>
+    <p>Inscrições de 26 de maio a 6 de junho.<br>Provas em 9 e 16 de novembro.</p>
+  </article>
+</section>
+
+<section id="governo">
+  <h2>Governo do Piauí</h2>
+  <article>
+    <h3>Programa Alfabetiza Piauí</h3>
+    <p>O programa visa combater o analfabetismo entre jovens e adultos...</p>
+  </article>
+</section>
+
+    <section id="seduc">
+        <h2>SEDUC ta on</h2>
+        <article>     
+<video controls width="100%" style="margin-top: 20px; border-radius: 12px;">
+            <source src="seduc-video.mp4.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+            <h3>O enem 2025 ta cheganndo  </h3>
+            <p>O Seduc Tá On chegou na área com os principais destaques da semana na Educação do Piauí.<br>Confira
+As inscrições para o Enem 2025 começam em 26 de maio e vão até 6 de junho.<br> As provas serão nos dias 9 e 16 de novembro.<br>
+Inauguramos a reforma, ampliação e modernização do Centro Cultural de Línguas da Seduc.
+</p>
+        </article>
+        <!-- Mais artigos -->
+    </section>
+
+    <section id="governo">
+        <h2>Governo do Piauí</h2>
+        <article>
+            <h3>Programa Alfabetiza Piauí</h3>
+            <p>O programa Alfabetiza Piauí visa combater o analfabetismo entre jovens e adultos...</p>
+        </article>
+        <!-- Mais artigos -->
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Notícias Educacionais do Piauí | Desenvolvido por [Ryan Santos Oliveira de Progamação de jogos digitais]</p>
+    </footer>
+    <!-- Menu lateral -->
+<aside id="side-menu" class="hidden">
+  <div class="menu-header">
+    <span id="close-btn">&times;</span>
+    <img src="logo-ceep-cortado.png.png" alt="Logo" style="width: 80px; margin: 10px auto; display: block;" />
+    <h2>Menu</h2>
+  </div>
+  <ul class="menu-list">
+    <li><a href="#inicio">Início</a></li>
+    <li><a href="#ultimas">Últimas Notícias</a></li>
+    <li><a href="#esperantina">Esperantina Piauí</a></li>
+    <li><a href="#concursos">Concursos e Empregos</a></li>
+    <li><a href="#webstories">Web Stories</a></li>
+    <li><a href="#eleicoes">Eleições 2026</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <div class="social-links">
+    <p>Conecte-se Conosco:</p>
+    <a href="#" target="_blank">Facebook</a> |
+    <a href="#" target="_blank">Instagram</a> |
+    <a href="#" target="_blank">TikTok</a> |
+    <a href="#" target="_blank">YouTube</a>
+  </div>
+</aside>
+<!-- Botão de cadastro -->
+<button onclick="window.location.href='cadastro-reporter.html'" style="display: block; margin: 40px auto;">
+  Cadastre-se como Repórter
+</button>
+</body>
+</html>
+<!-- Menu lateral -->
+<aside id="side-menu" class="hidden">
+    <div class="menu-header">
+        <span id="close-btn">&times;</span>
+        <h2>Contatos da Escola</h2>
+    </div>
+    <ul class="menu-list">
+        <li><strong>CENTRO ESTADUAL DE EDUCAÇÃO PROFISSIONAL LEONARDO DAS DORES
+    <br>
+<li>Rua. José Franco, 172 – Conjunto Bernardo Rêgo de Aguiar I – Q 20 – 64180-000 Esperantina – Piauí</strong></li>
+        <li><a href="https://www.instagram.com/ceepleonardodasdores/" target="_blank">Instagram da Escola</a></li>
+        <li><strong>Diretora Profª Elisaldete:</strong> (86) 98845 5002</li>
+        <li><strong>Coordenação Pedagógica / Manhã – Profª Elzi</strong> (86) 99814 0151</li>
+        <li><strong>Coordenação Pedagógica / Tarde – Profª Edilene</strong> (86) 99932 4423</li>
+        <li><strong>Coordenação Pedagógica / Noite – Prof. Luan</strong> (86) 98110 7446</li>
+    </ul>
+</aside>
+</body>
+</html>
